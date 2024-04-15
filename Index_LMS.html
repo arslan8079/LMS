@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boostrap 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js liabrary -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar_edit navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Liabrary Management System(LMS)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop_registration" aria-controls="offcanvasTop">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop_login" aria-controls="offcanvasTop">Login</a>
+                </ul>
+    </nav>
+    <!-- slider -->
+    <section class="sldr">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 px-0 mx-0">
+                    <div class="slider_content">
+                        <div class="slider_content_child">
+                            <div class="slider_heading">Empowering Learning Journeys</div>
+                            <div class="slider_pera">Through Every Challenge and Triumph,
+                                You're Sculpting a Stronger, Wiser, and More Resilient
+                                Self on Your Empowering Learning Journey.
+                            </div>
+                            <div class="slider_btn"><a href="#">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- catgaries -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/quran.png" alt="">
+                                    </div>
+                                    <div class="cat_title">Islamic</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/reading-book.png" alt="">
+                                    </div>
+                                    <div class="cat_title">Stories</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/sports.png" alt="">
+                                    </div>
+                                    <div class="cat_title">Sports</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/writing.png" alt="">
+                                    </div>
+                                    <div class="cat_title">Novels</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/history (1).png" alt="">
+                                    </div>
+                                    <div class="cat_title">Historical</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="cat_items">
+                                <div class="cat_item_child">
+                                    <div class="cat_icon">
+                                        <img src="assets/icons/notification.png" alt="">
+                                    </div>
+                                    <div class="cat_title">Upadate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- search fieeld -->
+                <div class="col-md-4 ">
+                    <form class="search_form" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search here" class="form-control" id="search">
+                        </div>
+
+                    </form>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- filter section -->
+
+    <!-- login fields -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop_login" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header loginHeader">
+            <button type="button" class="btn-close btnLoginClose" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <h5 class="offcanvas-title login" id="offcanvasTopLabel ">SIGN IN </h5>
+
+        </div>
+        <div class="offcanvas-body">
+            <div class="wrapper fadeInDown">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div id="formContent">
+                                <form class="panel">
+                                    <!-- Username -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="form-label"></label>
+                                            <input type="text" placeholder="Username" class="form-control" required />
+                                        </div>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="form-label"></label>
+                                            <input type="password" placeholder="Password" class="form-control"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <!-- Checkbox -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="ckeck">
+                                                <input type="checkbox" class="form-check-input" /> Remember Me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Sign In Button -->
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex">
+                                            <button type="submit" class="sign-btn">SIGN IN</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <section>
+        <!-- registration fields -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop_registration"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header loginHeader">
+                <button type="button" class="btn-close btnLoginClose" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                <h5 class="offcanvas-title login" id="offcanvasTopLabel ">Registration </h5>
+
+            </div>
+            <div class="offcanvas-body">
+                <div class="wrapper fadeInDown">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div id="formContent">
+                                    <form class="panel">
+                                        <!-- Username -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"></label>
+                                                <input type="text" placeholder="Fullname" class="form-control"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <!-- Username -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"></label>
+                                                <input type="text" placeholder="Username" class="form-control"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <!-- Username -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"></label>
+                                                <input type="email" placeholder="Email" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <!-- Password -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"></label>
+                                                <input type="password" placeholder="Password" class="form-control"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="form-label"></label>
+                                                <input type="password" placeholder="Confirm Password"
+                                                    class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="row">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p class="ckeck">
+                                                        <input type="checkbox" class="form-check-input" />
+                                                        Remember Me
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Sign In Button -->
+                                            <div class="row">
+                                                <div class="col-md-12 d-flex">
+                                                    <button class="sign-btn">Register Now</button>
+                                                </div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </section>
+
+    <!-- cards -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="card bookCard mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/book.png" alt="..." 
+                            style="width: 100%;object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text card-p">This is a wider card with supporting
+                                     text below as a natural
+                                    lead-in.</p>
+                                <p class="card-text"><small class="text-body-secondary 
+                                    small_card_text">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card bookCard mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/book.png" alt="..." 
+                            style="width: 100%;object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text card-p">This is a wider card with supporting
+                                     text below as a natural
+                                    lead-in.</p>
+                                <p class="card-text"><small class="text-body-secondary 
+                                    small_card_text">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card bookCard mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/book.png" alt="..." 
+                            style="width: 100%;object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text card-p">This is a wider card with supporting
+                                     text below as a natural
+                                    lead-in.</p>
+                                <p class="card-text"><small class="text-body-secondary 
+                                    small_card_text">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <div class="card bookCard mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/book.png" alt="..." style="width: 100%;object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text card-p">This is a wider card with supporting text below as a natural
+                                    lead-in.</p>
+                                <p class="card-text"><small class="text-body-secondary small_card_text">Last updated 3
+                                        mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- card end -->
+
+
+    <!-- footer -->
+    <div class="container-fluid px-0" >
+        <footer class="text-center text-lg-start text-white">
+            <section
+            class="d-flex justify-content-between p-4"
+            style="background-color: #6351ce"
+            >
+     <!-- Left -->
+     <div class="me-5">
+       <span>Get connected with us on social networks:</span>
+     </div>
+     <!-- Left -->
+
+     <!-- Right -->
+     <div>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-facebook-f"></i>
+       </a>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-twitter"></i>
+       </a>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-google"></i>
+       </a>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-instagram"></i>
+       </a>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-linkedin"></i>
+       </a>
+       <a href="" class="text-white me-4">
+         <i class="fa fa-github"></i>
+       </a>
+     </div>
+     <!-- Right -->
+   </section>
+   <!-- Section: Social media -->
+
+   <!-- Section: Links  -->
+   <section class="">
+     <div class="container text-center text-md-start mt-5">
+       <!-- Grid row -->
+       <div class="row mt-3">
+         <!-- Grid column -->
+         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+           <!-- Content -->
+           <h6 class="text-uppercase fw-bold">Company name</h6>
+           <hr
+               class="mb-4 mt-0 d-inline-block mx-auto"
+               style="width: 60px; background-color: #7c4dff; height: 2px"
+               />
+           <p>
+             Here you can use rows and columns to organize your footer
+             content. Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit.
+           </p>
+         </div>
+         <!-- Grid column -->
+
+         <!-- Grid column -->
+         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+           <!-- Links -->
+           <h6 class="text-uppercase fw-bold">Products</h6>
+           <hr
+               class="mb-4 mt-0 d-inline-block mx-auto"
+               style="width: 60px; background-color: #7c4dff; height: 2px"
+               />
+           <p class="footer_cotects_link">
+             <a href="#!" class="text-white">MDBootstrap</a>
+           </p>
+           <p class="footer_cotects_link">
+             <a href="#!" class="text-white">MDWordPress</a>
+           </p>
+           <p class="footer_cotects_link">
+             <a href="#!" class="text-white">BrandFlow</a>
+           </p>
+           <p class="footer_cotects_link">
+             <a href="#!" class="text-white">Bootstrap Angular</a>
+           </p>
+         </div>
+         <!-- Grid column -->
+
+         <!-- Grid column -->
+         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+           <!-- Links -->
+           <h6 class="text-uppercase fw-bold">Useful links</h6>
+           <hr
+               class="mb-4 mt-0 d-inline-block mx-auto"
+               style="width: 60px; background-color: #7c4dff; height: 2px"
+               />
+           <p class="footer_cotects_link" class="footer_cotects_link">
+             <a href="#!" class="text-white">Your Account</a>
+           </p>
+           <p class="footer_cotects_link" class="footer_cotects_link">
+             <a href="#!" class="text-white">Become an Affiliate</a>
+           </p>
+           <p class="footer_cotects_link" class="footer_cotects_link">
+             <a href="#!" class="text-white">Shipping Rates</a>
+           </p>
+           <p class="footer_cotects_link" class="footer_cotects_link">
+             <a href="#!" class="text-white">Help</a>
+           </p>
+         </div>
+         <!-- Grid column -->
+
+         <!-- Grid column -->
+         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+           <!-- Links -->
+           <h6 class="text-uppercase fw-bold">Contact</h6>
+           <hr
+               class="mb-4 mt-0 d-inline-block mx-auto"
+               style="width: 60px; background-color: #7c4dff; height: 2px"
+               />
+           <p class="footer_cotects_link"><i class="fa fa-home mr-3"></i> New York, NY 10012,
+             US</p>
+           <p class="footer_cotects_link"><i class="fa fa-envelope mr-3">
+           </i> info@example.com</p>
+           <p class="footer_cotects_link"><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+           <p class="footer_cotects_link"><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+         </div>
+         <!-- Grid column -->
+       </div>
+       <!-- Grid row -->
+     </div>
+   </section>
+   <!-- Section: Links  -->
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+           
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+        </footer>
+    </div>
+    <!-- end -->
+</body>
+
+</html>
